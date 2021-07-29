@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <script src="https://kit.fontawesome.com/f5e76c1334.js" crossorigin="anonymous"></script>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .frm{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .frm input, button{
+            margin-top: 15px;
+            border: 1px solid lightgray;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        button{
+            background-color: blue;
+            color: whitesmoke;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            margin-right: 20px;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <span>
+                <a href=""> home </a>
+                <a href=""> second page </a>
+                <a href=""> third page </a>
+                <a href=""> about us </a>
+            </span>
+
+            <span>
+                <a href=""> <i class="fa fa-user"></i> </a>
+                <a href=""> <i class="fas fa-sign-out-alt"></i> </a>
+            </span>
+
+        </nav>
+
+    </header>
+
+    <br> <br>
+    <h1> This is a simple form </h1>
+    <section class="container">
+        <form action="" class="frm">
+            <input type="email" placeholder="Enter email">
+            <input type="password" placeholder="Enter password">
+            <button type="submit"> submit </button>
+            <button type="cancel"> cancel </button>
+        </form>
+    </section>
+</body>
+</html>
