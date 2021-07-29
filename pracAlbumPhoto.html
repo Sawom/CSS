@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo Album</title>
+
+    <style>
+        span{
+            color: midnightblue;
+        }
+
+        .photo-album{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .photo-frame{
+            width: 400px;
+            height: 300px;
+            border-radius: 3%;
+            padding: 1%;
+            position: relative;
+            margin: 10px;
+            overflow:hidden;
+        }
+
+        .image img{
+            width: 100%;
+            border: 3px solid darkcyan;
+            border-radius: 3%;
+        }
+
+        .details{
+            display: none;
+            position: absolute;
+            width: 200px;
+            top: 0;
+            padding: 4%;
+        }
+
+        .photo-frame:hover .details{
+            display: block;
+            background-color: rgba(139, 14, 14, 0.513);
+            margin-top: 2%;
+            color: whitesmoke;
+            font-weight: 600;
+            padding: 4%;
+        }
+
+        .photo-frame:hover .image{
+            transform: scale(1.5);
+            transition: transform 2s ease-in-out;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1> Here is album of <span>  Taylor Swift </span> </h1>
+
+    <div class="photo-album">
+        <div class="photo-frame">
+            <div class="image">
+                <img src="image/t1.jpg" alt="">
+            </div>
+
+            <div class="details">
+                <h3>Early life</h3>
+                <p>
+                    Swift showed an interest in music at an early age, and she progressed quickly from roles in children’s theatre to her first appearance before a crowd of thousands.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="photo-frame">
+            <div class="image">
+                <img src="image/t2.jpg" alt="">
+            </div>
+
+            <div class="details">
+                <h3>Debut album and Fearless</h3>
+                <p>
+                    The song was an immediate success, spending eight months on the Billboard country singles chart.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="photo-frame">
+            <div class="image">
+                <img src="image/t3.jpg" alt="">
+            </div>
+
+            <div class="details">
+                <h3>Second album</h3>
+                <p>
+                    On Swift’s second album, Fearless (2008), she demonstrated a refined pop sensibility
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="photo-frame">
+            <div class="image">
+                <img src="image/t4.jpg" alt="">
+            </div>
+
+            <div class="details">
+                <h3>Later that year</h3>
+                <p>
+                    Later that year Swift made her feature-film debut in the romantic comedy Valentine’s Day and was named the new spokesperson for CoverGirl cosmetics.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="photo-frame">
+            <div class="image">
+                <img src="image/t5.jpg" alt="">
+            </div>
+
+            <div class="details">
+                <h3>fourth album</h3>
+                <p>
+                    Swift showed an interest in music at an early age, and she progressed quickly from roles in children’s theatre to her first appearance before a crowd of thousands.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="photo-frame">
+            <div class="image">
+                <img src="image/t6.jpg" alt="">
+            </div>
+
+            <div class="details">
+                <h3>Early life</h3>
+                <p>
+                    Swift showed an interest in music at an early age, and she progressed quickly from roles in children’s theatre to her first appearance before a crowd of thousands.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
