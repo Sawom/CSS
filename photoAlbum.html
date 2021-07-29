@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .photo-frame{
+            height: 230px;
+            width: 300px;
+            border: 2px solid darkblue;
+            padding: 3%;
+            position: relative;
+            border-radius: 5%;
+        }
+
+        .photo-frame img{
+            width: 100%;
+            border-radius: 5%;
+
+        }
+
+        .details{
+            display: none;
+            position: absolute;
+            width: 300px;
+            top: 0;
+        }
+
+        .photo-frame:hover .details{
+            display: block;
+            background-color: hsla(175, 14%, 52%, 0.515);
+            
+            font-weight: 600;
+        }
+
+        .details h3{
+            background-color: black;
+            color: whitesmoke;
+        }
+
+    </style> 
+
+
+</head>
+<body>
+
+    <section>
+        <div >
+            <div class="photo-frame">
+                <div class="image">
+                    <img src="image/t1.jpg" alt="">
+                </div>
+
+                <div class="details">
+                    <h3>Early life</h3>
+                    <p>
+                        Swift showed an interest in music at an early age, and she progressed quickly from roles in children’s theatre to her first appearance before a crowd of thousands.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+    
+</body>
+</html>
